@@ -42,7 +42,8 @@ let counts = {
 const contar = () => {
     for (let i = 0; i < par.length; i++) {
         for (letra in counts) {
-                counts.letra+=1
+            if(letra===par[i].toLowerCase())
+                counts[letra]+=1
         }
     }
 } 
